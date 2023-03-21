@@ -71,7 +71,8 @@ button{
 .filters h2{
     font-size: 16px;
 }
-.filters .popover{
+.filters .locations .popover,
+.filters .amenities .popover{
     border: 1px solid black;
     border-radius: 4px;
     background-color: #fafafa;
@@ -80,8 +81,39 @@ button{
     padding-bottom: 20px;
     padding-top: 20px;
     list-style: none;
+    display: none;
+    z-index: 999;
 }
 .filters .locations:hover popover,
 .filters .amenities:hover popover{
     display: inline-block;
+}
+.popover p{
+    font-size: 16px;
+    font-weight: bold;
+    padding: o.5em;
+    margin: 0;
+    border-bottom: 1px solid #dddddd;
+}
+.places{
+    max-width: 1000px;
+    margin: 0px auto;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.places h1{
+    position: absolute;
+    bottom: 69%;
+    padding-left: 34%;
+    width: 100%;
+    
+}
+.places h2{
+    width: 390px;
+    /* padding: 20px;
+    margin: 20px; */
+    position: relative;
+    bottom: 75%;
 }
